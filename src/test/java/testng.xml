@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AndroidSample" verbose="1" parallel="false">
+    <test name="AndroidSample">
+        <classes>
+            <class name="TestCases">
+                <methods>
+                    <include name="appStart" />
+                    <include name="searchItem" />
+                    <include name="addingItemToCart" />
+                    <include name="changingItemQuantity" />
+                    <include name="removingItemFromCart" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
