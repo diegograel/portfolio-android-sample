@@ -49,12 +49,6 @@ public class TestCases {
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            try {
-                driver.quit();
-            } catch (Exception e) {
-                System.err.println("Driver quit failed: " + e.getMessage());
-            }
-        }
+        Functions.finishTest();
     }
 }
